@@ -1,8 +1,12 @@
 
 function testFunc1() {
   alert('test.js;')
-  liff.init({ liffId: '1657171925-yd6kZD68' }).then(() => {
-    location.replace("https://liff.line.me/1657171925-yd6kZD68");
+  var myLiffId = '1657171925-yd6kZD68'
+  liff.init({
+    liffId: myLiffId,
+    withLoginOnExternalBrowser: true,
+  }).then(() => {
+    location.replace("https://line.me/"+myLiffId+"/");
   });
 //  return 'test.js'
 }

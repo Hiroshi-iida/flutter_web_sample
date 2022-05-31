@@ -11,7 +11,6 @@ Future main() async {
   // LiffInitParam(liffId: '1656967377-6m2kVOQ7');
   // Liff.login(LiffLoginParam('https://liff.line.me/1656967377-6m2kVOQ7'));
   runApp(MyApp());
-  testFunc1();
 }
 
 class MyApp extends StatefulWidget {

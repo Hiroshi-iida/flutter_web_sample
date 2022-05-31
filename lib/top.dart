@@ -5,6 +5,8 @@ import 'package:flutter_web_sample/sample.dart';
 import 'package:http/http.dart' as http;
 import 'dart:js' as js;
 
+import 'example.dart';
+
 class Top extends StatefulWidget {
   const Top({Key? key}) : super(key: key);
 
@@ -50,11 +52,12 @@ class _TopState extends State<Top> {
               ),
               MaterialButton(
                 onPressed: () {
-                  js.context.callMethod('testFunc', ['test!!!']);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Sample()),
-                  );
+                  testFunc1();
+                  // js.context.callMethod('testFunc', ['test!!!']);
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => Sample()),
+                  // );
                   // setState(() {
                   //   update();
                   // });
