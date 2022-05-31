@@ -23,8 +23,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   update() async {
     Uri uri = !kReleaseMode
-        ? Uri.parse(dotenv.env['PROD_API_URL']!)
-        : Uri.parse(dotenv.env['DEV_API_URL']!);
+        ? Uri.parse('https://5mzw2ko471.execute-api.us-east-1.amazonaws.com')
+        : Uri.parse('https://5mzw2ko471.execute-api.us-east-1.amazonaws.com');
     var result = await http.post(uri);
     setState(() {
       counter = int.parse(result.body);
