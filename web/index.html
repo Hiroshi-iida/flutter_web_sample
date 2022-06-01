@@ -40,7 +40,22 @@
   <script src="flutter.js" defer></script>
   <script src="app.js" defer></script>
   <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js').then(registration => {
+          //登録成功
+          registration.onupdatefound = function () {
+            console.log('Update found');
+            registration.update();
+          }
+        })
+          .catch(err => {
+            //登録失敗
+          });
+      });
+    }
+  </script>
 </head>
 <body>
   <script>
