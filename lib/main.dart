@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_sample/sample.dart';
 import 'package:flutter_web_sample/top.dart';
 import 'package:flutter/foundation.dart';
 
@@ -22,7 +23,12 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Top()
+      // home: const Top(),
+      routes: {
+        '/': (context) => Top(),
+        '/top': (context) => Top(),
+        '/details': (context) => Sample(),
+      },
     );
   }
 }
