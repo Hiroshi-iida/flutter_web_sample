@@ -30,7 +30,7 @@ class _TopState extends State<Top> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Counter App"),
+        title: Text("app bar title"),
       ),
       body: Container(
         child: Center(
@@ -52,12 +52,12 @@ class _TopState extends State<Top> {
               ),
               MaterialButton(
                 onPressed: () {
-                  testFunc1();
+                  // testFunc1();
                   // js.context.callMethod('testFunc', ['test!!!']);
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => Sample()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Sample()),
+                  );
                   // setState(() {
                   //   update();
                   // });
