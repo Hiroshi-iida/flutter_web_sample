@@ -8,13 +8,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_dotenv: ^5.0.2
   http: ^0.13.4
   js: ^0.6.4
   flutter_line_sdk: ^2.2.0
-  flutter_web_plugins:
-    sdk: flutter
 
 dev_dependencies:
   flutter_test:
