@@ -52,7 +52,7 @@ class _TopState extends State<Top> {
               ),
               MaterialButton(
                 onPressed: () {
-                  testFunc1();
+                  // testFunc1();
                   // js.context.callMethod('testFunc', ['test!!!']);
                   Navigator.push(
                     context,
