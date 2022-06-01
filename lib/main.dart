@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_sample/sample.dart';
 import 'package:flutter_web_sample/top.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+
 
 Future main() async {
+  setUrlStrategy(PathUrlStrategy());
   runApp(MyApp());
 }
 
